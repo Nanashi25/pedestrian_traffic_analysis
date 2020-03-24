@@ -97,7 +97,6 @@ public class pcapTools {
                 }
             }
             
-            //SOLVE THE ISSUE OF WRONG NODE LETTER IN MAIN
             
             BufferedWriter output = new BufferedWriter(
                     new FileWriter("node" + nodeLetter + "_session" + sessionNum + ".txt"));
@@ -245,9 +244,8 @@ public class pcapTools {
             userInput.nextLine();
             
         } while (ans.equals("y"));
-    }
-    
-    public void displayDestinations(){
+        
+        //display destinations here
     }
 
     public void traceIP(String ipAddress) {
@@ -259,6 +257,51 @@ public class pcapTools {
             Mac Address | Node Letter | timestamp
         */
         //will read from the allData file generated
+    	public void traceIP(String ipAddress) throws FileNotFoundException {
+    	    /Will read the textfiles pr
+    	    public void traceIP(String ipAdoduced by earlier methods/
+    	        Scanner s = new Scanner(new File(""));
+    	        String check, mac, node, time, name;
+    	        ArrayList<ArrayList<String>> arr = new ArrayList<ArrayList<String>>();
+
+    	        while(s.hasNext()){
+    	            check = s.next();
+
+    	            if(check.equals(ipAddress)){
+    	                ArrayList<String> line = new ArrayList<String>();
+    	                mac = check;
+    	                line.add(mac);
+    	                check = s.next();
+    	                node = check;
+    	                line.add(node);
+    	                check = s.next();
+    	                time = check;
+    	                check = s.next();
+    	                line.add(time);
+    	                name = check;
+    	                line.add(name);
+    	                System.out.println(line);
+    	                arr.add(line);
+
+    	                }else{
+    	                s.next();
+    	                s.next();
+    	                s.next();
+    	            }
+    	        }
+
+    	            for(int i = 0; i < arr.size(); i++){
+    	                System.out.println(arr.get(i));
+    	        }
+
+
+    	    /Will ask users which files they would like to look through/
+    	    /will note every instance of that address (as source or dest) and the file it was found in/
+    	    /will output to textfile to share/
+    	        /*Format:
+    	            timestamp NodeLetter   IP address
+    	        */
+    	    }
     }
 	
     public void getPath(String ipAddress) {
@@ -269,12 +312,29 @@ public class pcapTools {
         
     }
 
-    public void getPopulation(){
+    public void getPopulationSession(){
         //Will tally the number of unique IP address at each node and then across all nodes
         //will read the uniqueIPs file generated
         //will output to console
         //"There were 5 people around node A at noon"
         //"A total of 300 people were gathered by our network at ...."
+    	
+    	//From each node
+    	
+    	public void getPopulation() throws IOException {
+            
+    		BufferedReader s = new BufferedReader(new FileReader("/home/kimberly/test.txt"));
+            String line;
+            int counter = 0;
+            while((line = s.readLine()) != null) {
+                counter++;
+            }
+            
+            System.out.println("A total of " + counter + " people were gathered by our network at ...."); 
+    }
+    
+    public void getPopulationNode() {
+    	
     }
 
     public void getMostTravelled(){
