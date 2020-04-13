@@ -3,7 +3,7 @@
 * Team Lead: Shaneka Lewis - https://github.com/shanekalewis
 * Co-Lead: Khrissani Brown 
 * Augusto	Almeida
-* Danielle Young
+* Danielle Young - https://github.com/Danielleanna27
 * Hericka Baez
 * Jonathan Jerome
 * Jonathan Montesinos
