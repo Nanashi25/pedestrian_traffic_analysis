@@ -7,7 +7,7 @@
 * Hericka Baez
 * Jonathan Jerome
 * Jonathan Montesinos
-* Jose Taleno
+* Jose Taleno https://github.com/Nanashi25
 * Josse	Carballo
 * Kevin	Zheng
 * Kimberly Salazar - https://github.com/ksala043
